@@ -122,6 +122,13 @@ We need to import the DecisionTree package, which is where the model is imported
 # ╔═╡ f7b67a19-1945-4e8b-a45c-bf34e5d84e38
 Tree = @load DecisionTreeClassifier pkg=DecisionTree
 
+# ╔═╡ fc83ac34-d40e-424c-8d39-63c9fe59f6a7
+md"""
+Now the very interesting thing about the MLJ framework is, that if you load another classifier, even from another package like ScikitLearn.jl, and you load something else as a Tree in in line of code above, you will initialize another model in the line of code below.
+
+Everything else will just work, because MLJ guarantees you the implementation of the interface! How awesome is that!
+"""
+
 # ╔═╡ b76b93de-fa2d-4687-bca7-41911ff8f381
 model = Tree()
 
@@ -1705,6 +1712,7 @@ version = "0.9.1+5"
 # ╟─6d0a80d7-0c07-4c6a-9034-9e8e14855189
 # ╠═e8dd6deb-bc78-43f6-9a2d-aebc8915a6a1
 # ╠═f7b67a19-1945-4e8b-a45c-bf34e5d84e38
+# ╟─fc83ac34-d40e-424c-8d39-63c9fe59f6a7
 # ╠═b76b93de-fa2d-4687-bca7-41911ff8f381
 # ╟─4048b4e6-0457-4bc6-978b-6b00a7a89e16
 # ╠═ce5e1fa3-7887-4e21-9aa6-22a9a8b9d9f3
