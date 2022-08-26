@@ -7,6 +7,7 @@ To setup the notebook:
 - Download and install [Julia](https://julialang.org)
 - Open your [Julia REPL](https://docs.julialang.org/en/v1/stdlib/REPL/), which can be done in VScode after you installed the Julia plugin, or in a bash terminal.
 - In the REPL, go to package mode by typing `]`. You will see the mode change color and it says `pkg>` instead of `julia>`.
+- instantiate the environments by typing `instantiate` , which will install all dependencies and precompile everything.
 - In packagemode, install Pluto by typing `add Pluto`. This will add Pluto to your environment.
 - After Pluto is installed, leave pkg mode by typing backspace.
 - Back in julia mode, type:
